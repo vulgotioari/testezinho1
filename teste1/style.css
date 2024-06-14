@@ -1,0 +1,70 @@
+:root {
+    --primary-color: #2ecc71;
+    --secondary-color: #2ecc71;
+    --delete-color: #bb1604;
+    --hover-color: #e60909;
+    --font-family: Arial, sans-serif;
+    --padding: 10px;
+    --margin: 5px;
+}
+
+body {
+    font-family: var(--font-family);
+    padding: var(--padding);
+    background-color: #f4f4f4;
+}
+
+h1 {
+    color: var(--primary-color);
+}
+
+input[type="text"] {
+    padding: var(--padding);
+    margin: var(--margin);
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+}
+
+button {
+    padding: var(--padding);
+    margin: var(--margin);
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--hover-color);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: white;
+    margin: var(--margin) 0;
+    padding: var(--padding);
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.delete {
+    color: var(--delete-color);
+    cursor: pointer;
+    padding-left: var(--margin);
+}
+
+.delete:hover {
+    color: var(--hover-color);
+}
+.listitem{
+ display: flex;
+ padding: 50%;
+}
